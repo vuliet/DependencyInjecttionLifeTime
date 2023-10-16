@@ -15,7 +15,7 @@ namespace DependencyInjecttionLifeTime.Services
 
         public string GetId()
         {
-            // sai neu khong dung scope (khong the resolve scoped lifetime vao singleton service)
+            // error neu khong dung scope (khong the resolve scoped lifetime vao singleton service)
             using var scope = _serviceProvider.CreateScope();
             var appUser = scope.ServiceProvider.GetRequiredService<AppUser>();
 
