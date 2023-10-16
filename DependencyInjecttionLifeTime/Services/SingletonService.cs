@@ -4,7 +4,6 @@ namespace DependencyInjecttionLifeTime.Services
 {
     public class SingletonService : ISingletonService
     {
-
         private readonly IServiceProvider _serviceProvider;
         private readonly Guid _id;
         public SingletonService(IServiceProvider serviceProvider)
