@@ -15,7 +15,7 @@ namespace DependencyInjecttionLifeTime.Services
 
         public string GetId()
         {
-            return $"{_id}_{_appUser.Index}";
+            return $"{_id}_Index{_appUser.Index}";
         }
     }
 }

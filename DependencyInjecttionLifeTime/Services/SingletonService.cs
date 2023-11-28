@@ -18,7 +18,7 @@ namespace DependencyInjecttionLifeTime.Services
             using var scope = _serviceProvider.CreateScope();
             var appUser = scope.ServiceProvider.GetRequiredService<AppUser>();
 
-            return $"{_id}_{appUser.Index}";
+            return $"{_id}_Index{appUser.Index}";
         }
     }
 }

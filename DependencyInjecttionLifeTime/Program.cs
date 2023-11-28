@@ -12,7 +12,7 @@ builder.Services.AddSingleton<ISingletonService, SingletonService>();
 builder.Services.AddScoped<IScopedService, ScopedService>();
 builder.Services.AddTransient<ITransientService, TransientService>();
 
-builder.Services.AddScoped(p =>
+builder.Services.AddSingleton(p =>
 {
     var random = new Random();
 
